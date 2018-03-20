@@ -2,6 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+*:focus{
+	outline: none;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -30,9 +33,18 @@ ul, ol{
 img {
 	max-width: 100%;
 }
-button {
+input, textarea, button{
 	outline: none;
 	border: none;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+textarea{
+	resize: vertical;
+}
+input[type="submit"]{
 	cursor: pointer;
 }
 blockquote{
@@ -120,6 +132,10 @@ blockquote span,
 	font-weight: 400;
 	letter-spacing: .2em;
 }
+.btn[disabled]{
+	cursor: not-allowed;
+	opacity: .6;
+}
 .btn.btn-default{
 	background-color: #e5e5e5;
 	color: #777;
@@ -138,8 +154,48 @@ blockquote span,
 	padding: 7px 15px;
 	font-size: 15px;
 }
-
+.icon{
+	font-size: 48px;
+	margin-bottom: 40px;
+}
 /*----Default component end----*/
+.form-control{
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 36px;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #777;
+	padding-left: 13px;
+	padding-right: 13px;
+}
+.form-control:focus{
+	border-color: #111;
+}
+textarea.from-control{
+	min-height: 82px;	
+	padding-top: 10px;
+}
+.form-control[disabled],
+.form-control.disabled{
+	cursor: not-allowed;
+	opacity: .6;
+}
+.form-control.error{
+	border-color: #f57e7e;
+}
+.form-info{
+	font-size: 11px;
+	font-weight: 400;
+	color: #aaa;
+}
+.form-info .fa{
+	font-size: 12px;
+}
 .header{
 	padding: 25px 0;
 	position: fixed;
@@ -156,7 +212,7 @@ blockquote span,
 }
 .header-nav {
 	float: right;
- 	line-height: 1.72;
+	line-height: 1.72;
 }
 .header-nav li{
 	display: inline-block;
@@ -168,7 +224,16 @@ blockquote span,
 .header .header-nav li + li{
 	margin-left: 35px;
 }
-	
+/*-----Default component end-------*/
+/*===Guide styles start===*/
+.quid-section form .form-control + .form-control{
+	margin-bottom: 10px;
+}
+
+/*===Guide styles end===*/
+
+/*======Custom styles start======*/
+/*---Inner----*/
 .inner{
 	height: 100vh;
 	text-align: center;
@@ -247,19 +312,16 @@ blockquote span,
 /*---About studio end---*/
 
 /*---Why choose---*/
- .benefits{
- 	margin-top: 90px;
- }
- .icon{
- 	font-size: 48px;
- 	margin-bottom: 40px;
- }
- .benefits .title{
- 	font-weight: 400;
- 	font-size: 14px;
- 	letter-spacing: .4em;
- 	margin-bottom: 40px;
- }
+.benefits{
+	margin-top: 90px;
+}
+
+.benefits .title{
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: .4em;
+	margin-bottom: 40px;
+}
 /*---Why choose end---*/
 
 /*---Latest news---*/
@@ -309,3 +371,116 @@ blockquote span,
 	filter:none;
 }
 /*---Latest news end---*/
+
+/*---Services---*/
+#tabs .tabs-nav li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+#tabs .tabs-nav li span{
+	display: block;
+}
+.tabs-nav .icon{
+	color: #888;
+}
+.tabs-nav  .ui-state-active span{
+	color: #111;
+}
+.services .tabs-nav{
+	overflow: hidden;
+}
+.tabs-name{
+	margin-bottom: 80px;
+	font: 400 14px 'Dosis', sans-serif ;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+/*---Services end---*/
+/*---Portfolio----*/
+#tabs-portfolio .tab-second li{
+	float: left;
+	text-align: center;
+}
+#tabs-portfolio .tab-second li a{
+	display:block;
+}
+.portfolio-item{
+	float: left;
+	width: 33.3333%;
+}
+.portfolio-item img{
+	width: 100%;
+	filter: grayscale(100%);
+	padding: 0 4px; 
+}
+.portfolio-item img:hover{
+	filter:none;
+}
+#all-works,
+.tab-second {
+	overflow: hidden;
+}
+.tab-second li{
+	text-transform: uppercase;
+	font: 400 14px 'Dosis', sans-serif ;
+	letter-spacing: .4em;
+	margin-left: 65px;
+}
+.tab-second{
+
+	margin-bottom: 50px;
+}
+/*.tab-second a{
+	color: #111;
+	opacity: .5;
+	}*/
+	.tab-second .ui-state-active a{
+		color: #111;
+	}
+	.portfolio p{
+		max-width: 800px;
+		margin: 0 auto;
+		margin-bottom: 80px;
+	}
+	.portfolio{
+		padding-bottom: 7px;
+	}
+	
+	.tabs-center{
+		/*height: auto;
+		text-align: center;*/
+		position: relative;
+		padding-bottom: 100px;
+		
+	}
+	.tab-second {
+		position: absolute;
+		top: 50%;
+		left:  50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/*---Portfolio end----*/
+	/*---Lets talk-----*/
+	.lets-talk-content{
+		padding: 140px 0;
+	}
+	.lets-talk-content p{
+		color:rgba(255, 255, 255, .7);
+		margin-bottom: 35px;
+	}
+	.lets-talk .lets-talk-img{
+		margin-top: -32px;
+	}
+	/*---Lets talk end-----*/
+	/*---Subsride----*/
+	.subscribe form .form-control{
+		max-width: 290px;
+	}
+	.subscribe .form-info{
+		margin-top: 17px;
+	}
+
+	/*---Subsride end----*/
+/*====Custom styles end=====
