@@ -40,6 +40,7 @@ input, textarea, button{
 button {
 	cursor: pointer;
 	background-color: transparent;
+	padding: 0;
 }
 textarea{
 	resize: vertical;
@@ -67,6 +68,11 @@ blockquote{
 }
 .bg-grey{
 	background-color: #f8f8f8;
+}
+.m-auto{
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
 }
 /*----Default classes end----*/
 
@@ -158,6 +164,28 @@ blockquote span,
 	font-size: 48px;
 	margin-bottom: 40px;
 }
+.rhomb-icon{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;	
+	transform: rotate(45deg);
+	font-size: 14px;
+}
+.rhomb-icon i{
+	transform: rotate(-45deg);
+}
+.rhomb-icon.black-icon{
+	color: #fff;
+	background-color: #111;
+}
+.rhomb-icon.transporent-icon{
+	color: #111;
+	background-color: transparent;
+	border:1px solid black;
+}
 /*----Default component end----*/
 .form-control{
 	width: 100%;
@@ -224,6 +252,7 @@ textarea.from-control{
 .header .header-nav li + li{
 	margin-left: 35px;
 }
+
 /*-----Default component end-------*/
 /*===Guide styles start===*/
 .quid-section form .form-control + .form-control{
@@ -324,6 +353,80 @@ textarea.from-control{
 }
 /*---Why choose end---*/
 
+/*---review carosel start----*/
+.reviews-carousel{
+	padding: 135px 0;
+	overflow: hidden;
+}
+.slick-dots{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 30px;
+}
+.slick-dots li{
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-color: rgba(255, 255, 255, .8);
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slick-dots li button{
+	display: none;
+}
+.slick-dots li + li{
+	margin-left: 5px;
+}
+.slick-dots li.slick-active{
+	background-color: #000;
+	border-color: rgba(255, 255, 255, .8);
+}
+.slick-arrow{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 1;
+	width: 90px;
+	cursor: pointer;
+}
+.slick-arrow.slick-prev{
+	left: 0;
+}
+.slick-arrow.slick-next{
+	right: 0;
+}
+.slick-arrow .carousel-button{
+	width: 63px;
+	background: #fff;
+	height: 63px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	margin-left: -32px;
+	margin-top: -31px;
+}
+.slick-arrow.slick-next .carousel-button {
+	right: 0;
+	margin-right: -31px;
+}
+.slick-arrow .carousel-button .fa{
+	transform: rotate(45deg);
+	position: absolute;
+	font-size: 10px;
+}
+.slick-arrow.slick-prev .carousel-button .fa{
+	bottom: 14px;
+	right: 17px;
+}
+.slick-arrow.slick-next .carousel-button .fa{
+	top: 17px;
+	left: 14px;
+}
+/*---review carosel end---*/
+
+
 /*---Latest news---*/
 .latest-news .title.section-title{
 	overflow: hidden;
@@ -398,6 +501,12 @@ textarea.from-control{
 }
 /*---Services end---*/
 /*---Portfolio----*/
+#tabs-portfolio {
+	text-align: center;
+}
+#tabs-portfolio ul{
+	display: inline-block;
+}
 #tabs-portfolio .tab-second li{
 	float: left;
 	text-align: center;
@@ -428,59 +537,128 @@ textarea.from-control{
 	margin-left: 65px;
 }
 .tab-second{
-
 	margin-bottom: 50px;
 }
-/*.tab-second a{
+
+.tab-second .ui-state-active a{
 	color: #111;
-	opacity: .5;
-	}*/
-	.tab-second .ui-state-active a{
-		color: #111;
-	}
-	.portfolio p{
-		max-width: 800px;
-		margin: 0 auto;
-		margin-bottom: 80px;
-	}
-	.portfolio{
-		padding-bottom: 7px;
-	}
+}
+.portfolio p{
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+.portfolio{
+	padding-bottom: 7px;
+}
+
+
+
+/*---Portfolio end----*/
+
+/*---carousel---*/
+.slide-content .icon{
+	margin-top: 13px;
+	margin-bottom: 26px;
+	color: #fff;
+} 
+
+.slide-content p{
+margin-top: 42px;
+margin-bottom: 23px;
+font-size: 18px;
+line-height: 30px;
+color: #fff;
+max-width: 750px;
+margin-right: auto;
+margin-left: auto;
+}
+.review-author{
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 38px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+/*--- / carousel---*/
+
+/*---Lets talk-----*/
+.lets-talk-content{
+	padding: 140px 0;
+}
+.lets-talk-content p{
+	color:rgba(255, 255, 255, .7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img{
+	margin-top: -32px;
+}
+/*---Lets talk end-----*/
+/*---Subsride----*/
+.subscribe form .form-control{
+	max-width: 290px;
+}
+.subscribe .form-info{
+	margin-top: 17px;
+}
+
+/*---Subsride end----*/
+
+/*---contacts start---*/
+.contact-item .contact-item-content{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.contact-item .contact-item-content span{
+	display: block;
+}
+.contact-title{
+	font-family:'Dosis', sans-serif;
+	font-size: 12px;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+}
+.contact-data{
+	line-height: 24px;
+	color: #111;
+}
+/*---contacts start end---*/
+
+/*---footer---*/
+.up{
+	margin-top: 60px;
 	
-	.tabs-center{
-		/*height: auto;
-		text-align: center;*/
-		position: relative;
-		padding-bottom: 100px;
-		
-	}
-	.tab-second {
-		position: absolute;
-		top: 50%;
-		left:  50%;
-		transform: translate(-50%, -50%);
-	}
-
-	/*---Portfolio end----*/
-	/*---Lets talk-----*/
-	.lets-talk-content{
-		padding: 140px 0;
-	}
-	.lets-talk-content p{
-		color:rgba(255, 255, 255, .7);
-		margin-bottom: 35px;
-	}
-	.lets-talk .lets-talk-img{
-		margin-top: -32px;
-	}
-	/*---Lets talk end-----*/
-	/*---Subsride----*/
-	.subscribe form .form-control{
-		max-width: 290px;
-	}
-	.subscribe .form-info{
-		margin-top: 17px;
-	}
-
-	/*---Subsride end----*/
-/*====Custom styles end=====
+}
+.logo-up{
+	margin-bottom: 25px;
+}
+.bottom{
+	margin-top: 110px;
+	margin-bottom: 60px;
+}
+.transporent-icon + .transporent-icon{
+	margin-left: 20px;
+}
+.bottom span{
+	display: block;
+}
+.bottom i{
+	margin-right: 16px;
+	color: #b5b5b5;
+}
+.bottom .rhythm{
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: .5em;
+	color: #111;
+	margin-bottom: 15px;
+}
+.bottom .made{
+	font-size: 11px;
+	line-height:2.18; 
+}
+/*---/footer---*/
+/*====Custom styles end=====*/
