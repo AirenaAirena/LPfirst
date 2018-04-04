@@ -266,10 +266,11 @@ textarea.form-control{
 .logo{
 	float: left;
 	opacity: .9;
+	padding: 10px 0;
 }
 .header-nav {
 	float: right;
-	line-height: 1.72;
+	line-height: 2.72;
 }
 .header-nav li{
 	display: inline-block;
@@ -291,7 +292,6 @@ textarea.form-control{
 	.header-nav{
 		display: none;
 	}
-	
 }
 /*-----header end-------*/
 
@@ -344,8 +344,8 @@ textarea.form-control{
 .inner-scroll-bottom{
 	background-color: #fff;
 	position: absolute;
-	bottom: 50px;
-	left: 950px;
+	left: 450px;
+	top: 300px;
 }
 .inner .rhomb-icon .fa{
 	position:relative;
@@ -360,13 +360,26 @@ textarea.form-control{
 		margin-bottom: 50px;
 	}
 	.inner-scroll-bottom{
-		margin-top: 70px;
+		position: absolute;
+		left: 250px;
+		top: 250px;
 	}
 }
 @media (max-width: 767px) {
 	.inner{
 		height: auto;
 		padding: 150px 0;
+	}
+}
+@media (max-width: 499px) {
+	.inner .h1{
+		letter-spacing: .5em;
+		text-indent: .5em;
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+	.inner-scroll-bottom{
+		left: auto;
 	}
 }
 @media(max-width: 320px){
@@ -418,6 +431,9 @@ textarea.form-control{
 	height: 12px;
 	width: 0%;
 	transition: width .5s ease-out;
+}
+.team-item-img img{
+	width: 100%;
 }
 .team-item .team-item-img:hover .branding {
 	width: 70%;
@@ -475,7 +491,7 @@ textarea.form-control{
 		font-size: 9px;
 	}
 }
-@media(max-width: 320px){
+@media(min-width: 320px){
 	.default-text{
 		margin-top: 15px;
 	}
@@ -487,6 +503,182 @@ textarea.form-control{
 	}
 }
 /*---About studio end---*/
+
+/*---Services---*/
+#tabs .tabs-nav{
+	margin-bottom: 80px;
+}
+#tabs .tabs-nav li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+#tabs .tabs-nav li span{
+	display: block;
+}
+.tabs-nav .icon{
+	color: #888;
+}
+.tabs-nav  .ui-state-active span{
+	color: #111;
+}
+.services .tabs-nav{
+	overflow: hidden;
+}
+.tabs-name{
+	font: 400 14px 'Dosis', sans-serif ;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+@media(max-width: 991px){
+	.tabs-name{
+		font-size: 11px;
+	}
+	#tabs .tabs-nav{
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 767px){
+	.tabs-name{
+		font-size: 9px;
+	}
+}
+@media(max-width: 576px){
+	.tabs-nav span.icon{
+		font-size: 36px;
+	}
+}
+@media(max-width: 500px){
+	#tabs .tabs-nav li{
+		width: 33.3332%;
+		margin-top: 20px;
+	}
+}	
+@media(max-width: 320px){
+	.tabs-name{
+		letter-spacing: .2em;
+		font-size: 8px;
+	}
+	#tabs blockquote{
+		font-size: 20px;
+	}
+}
+/*---Services end---*/
+
+/*---Lets talk-----*/
+.lets-talk-content{
+	padding: 140px 0;
+}
+.lets-talk-content p{
+	color:rgba(255, 255, 255, .7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img{
+	margin-top: -32px;
+}
+@media(max-width: 991px){
+	.lets-talk-content{
+		text-align: center;
+		padding: 70px 0;
+	}
+}
+@media(max-width: 320px){
+	.title.section-title{
+		font-size: 15px;
+		letter-spacing: .3em;
+	}
+	.latest-news .all-news{
+		float: left;
+		margin-top: 10px;
+	}
+}
+/*---Lets talk end-----*/
+
+/*---Portfolio----*/
+.tabs-wrapper{
+	margin-top: 80px;
+}
+#tabs-portfolio {
+	text-align: center;
+}
+#tabs-portfolio ul{
+	display: inline-block;
+}
+#tabs-portfolio .tab-second li{
+	float: left;
+	text-align: center;
+}
+#tabs-portfolio .tab-second li a{
+	display:block;
+}
+.portfolio-item{
+	float: left;
+	width: 33.3333%;
+}
+.portfolio-item img{
+	width: 100%;
+	filter: grayscale(100%);
+	padding: 0 4px; 
+}
+.portfolio-item img:hover{
+	filter:none;
+}
+#all-works, #brand, #photo, #design, 
+.tab-second {
+	overflow: hidden;
+}
+.tab-second li{
+	text-transform: uppercase;
+	font: 400 14px 'Dosis', sans-serif ;
+	letter-spacing: .4em;
+	margin-left: 65px;
+}
+.tab-second{
+	margin-bottom: 50px;
+}
+.tab-second .ui-state-active a{
+	color: #111;
+}
+.portfolio p{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.portfolio{
+	padding-bottom: 7px;
+}
+@media(max-width: 991px){
+	#tabs-portfolio .portfolio-item{
+		width: 50%;
+	}
+}
+@media(max-width: 768px){
+	.tab-second li{
+		margin-left: 25px;
+	}
+}
+@media(max-width: 576px){
+	.tab-second li{
+		letter-spacing: 3px;
+	}
+	.portfolio p{
+		margin-bottom: 40px;
+	}
+	#tabs-portfolio .tab-second li{
+		margin-top: 20px;
+	}
+}
+@media(max-width: 320px){
+	.portfolio p{
+		margin-bottom: 20px;
+	}
+	#tabs-portfolio .portfolio-item{
+		width: 100%;
+	}
+	.tab-second li{
+		letter-spacing: 1px;
+	}
+}
+/*---Portfolio end----*/
 
 /*---Why choose---*/
 .benefits{
@@ -509,7 +701,7 @@ textarea.form-control{
 }
 /*---Why choose end---*/
 
-/*---review carosel start----*/
+/*---reviews-carousel start----*/
 .reviews-carousel{
 	padding: 135px 0;
 	overflow: hidden;
@@ -580,7 +772,62 @@ textarea.form-control{
 	top: 17px;
 	left: 14px;
 }
-/*---review carosel end---*/
+/*---reviews-carousel end---*/
+/*---carousel---*/
+.slide-content .icon{
+	margin-bottom: 26px;
+	color: #fff;
+} 
+.slide-content p{
+	margin-top: 42px;
+	margin-bottom: 23px;
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	max-width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.review-author{
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 38px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+
+@media(max-width: 767px){
+	.slide-content{
+		max-width: 730px;
+	}
+}
+@media(max-width: 576px){
+	.reviews-carousel{
+		padding: 65px 0;
+	}
+	.slide-content{
+		max-width: 560px;
+		margin: auto;/*Появляется непонятный для меня margin с права ,я его поэтому ставлю auto? что бы блок был по середине*/
+	}
+}
+@media(max-width: 320px){
+	.slide-content{
+		max-width: 310px;
+	}
+	.slick-arrow.slick-prev .carousel-button .fa{
+		bottom: 7px;
+		right: 10px;
+	}
+	.slick-arrow .carousel-button{
+		width: 53px;
+		height: 53px;
+	}
+	.slick-arrow.slick-next .carousel-button .fa {
+		top: 10px;
+		left: 10px;
+	}
+}
+/*--- / carousel---*/
 
 
 /*---Latest news---*/
@@ -619,7 +866,6 @@ textarea.form-control{
 .latest-news .btn-xs{
 	font-size: 11px;
 	letter-spacing: .2em;
-	/*line-height: 1.72;*/
 }
 .news-item-img{
 	filter: grayscale(100%);
@@ -639,217 +885,11 @@ textarea.form-control{
 		padding-bottom: 30px;
 		border-bottom: 2px solid black;
 	}
-	
 }
 /*---Latest news end---*/
 
-/*---Services---*/
-#tabs .tabs-nav{
-	margin-bottom: 80px;
-}
-#tabs .tabs-nav li{
-	float: left;
-	width: 20%;
-	text-align: center;
-}
-#tabs .tabs-nav li span{
-	display: block;
-}
-.tabs-nav .icon{
-	color: #888;
-}
-.tabs-nav  .ui-state-active span{
-	color: #111;
-}
-.services .tabs-nav{
-	overflow: hidden;
-}
-.tabs-name{
-	font: 400 14px 'Dosis', sans-serif ;
-	letter-spacing: .4em;
-	text-transform: uppercase;
-}
 
-@media(max-width: 991px){
-	.tabs-name{
-		font-size: 11px;
-	}
-	#tabs .tabs-nav{
-		margin-bottom: 30px;
-	}
-}
-@media(max-width: 320px){
-	#tabs .tabs-nav li{
-		width: 33.3332%;
-		margin-top: 20px;
-	}
-	.tabs-name{
-		letter-spacing: .2em;
-		font-size: 8px;
-	}
-	#tabs blockquote{
-		font-size: 20px;
-	}
-}
-/*---Services end---*/
-/*---Portfolio----*/
-.tabs-wrapper{
-	margin-top: 80px;
-}
-#tabs-portfolio {
-	text-align: center;
-}
-#tabs-portfolio ul{
-	display: inline-block;
-}
-#tabs-portfolio .tab-second li{
-	float: left;
-	text-align: center;
-}
-#tabs-portfolio .tab-second li a{
-	display:block;
-}
-.portfolio-item{
-	float: left;
-	width: 33.3333%;
-}
-.portfolio-item img{
-	width: 100%;
-	filter: grayscale(100%);
-	padding: 0 4px; 
-}
-.portfolio-item img:hover{
-	filter:none;
-}
-#all-works, #brand, #photo, #design, 
-.tab-second {
-	overflow: hidden;
-}
-.tab-second li{
-	text-transform: uppercase;
-	font: 400 14px 'Dosis', sans-serif ;
-	letter-spacing: .4em;
-	margin-left: 65px;
-}
-.tab-second{
-	margin-bottom: 50px;
-}
-.tab-second .ui-state-active a{
-	color: #111;
-}
-.portfolio p{
-	max-width: 800px;
-	margin: 0 auto;
-	
-}
-.portfolio{
-	padding-bottom: 7px;
-}
-@media(max-width: 991px){
-	#tabs-portfolio .portfolio-item{
-		width: 50%;
-	}
-}
-@media(max-width: 576px){
-	.tab-second li{
-		margin-left: 25px;
-	}
-	.portfolio p{
-		margin-bottom: 40px;
-	}
-}
-@media(max-width: 320px){
-	#tabs-portfolio .tab-second li{
-		margin-top: 20px;
-	}
-	.portfolio p{
-		margin-bottom: 20px;
-	}
-	#tabs-portfolio .portfolio-item{
-		width: 100%;
-	}
-}
-/*---Portfolio end----*/
-
-/*---carousel---*/
-.slide-content .icon{
-	margin-bottom: 26px;
-	color: #fff;
-} 
-.slide-content p{
-	margin-top: 42px;
-	margin-bottom: 23px;
-	font-size: 18px;
-	line-height: 30px;
-	color: #fff;
-	max-width: 750px;
-	margin-right: auto;
-	margin-left: auto;
-}
-.review-author{
-	font-weight: 400;
-	font-size: 11px;
-	line-height: 38px;
-	letter-spacing: .2em;
-	text-transform: uppercase;
-}
-@media(max-width: 576px){
-	.reviews-carousel{
-		padding: 65px 0;
-	}
-	.slide-content{
-		max-width: 560px;
-		margin: auto;/*Появляется непонятный для меня margin с права ,я его поэтому ставлю auto? что бы блок был по середине*/
-	}
-}
-@media(max-width: 320px){
-	.slide-content{
-		max-width: 310px;
-	}
-	.slick-arrow.slick-prev .carousel-button .fa{
-		bottom: 7px;
-		right: 10px;
-	}
-	.slick-arrow .carousel-button{
-		width: 53px;
-		height: 53px;
-	}
-	.slick-arrow.slick-next .carousel-button .fa {
-		top: 10px;
-		left: 10px;
-	}
-}
-/*--- / carousel---*/
-
-/*---Lets talk-----*/
-.lets-talk-content{
-	padding: 140px 0;
-}
-.lets-talk-content p{
-	color:rgba(255, 255, 255, .7);
-	margin-bottom: 35px;
-}
-.lets-talk .lets-talk-img{
-	margin-top: -32px;
-}
-@media(max-width: 991px){
-	.lets-talk-content{
-		text-align: center;
-		padding: 70px 0;
-	}
-}
-@media(max-width: 320px){
-	.title.section-title{
-		font-size: 15px;
-		letter-spacing: .3em;
-	}
-	.latest-news .all-news{
-		float: left;
-		margin-top: 10px;
-	}
-}
-/*---Lets talk end-----*/
-/*---Subsride----*/
+/*---Subscribe----*/
 .subscribe form .form-control{
 	max-width: 290px;
 }
@@ -861,7 +901,7 @@ textarea.form-control{
 		margin-top: 10px;
 	}
 }
-/*---Subsride end----*/
+/*---Subscribe end----*/
 
 /*---contacts start---*/
 .contact-items-wrapper{
@@ -907,13 +947,21 @@ textarea.form-control{
 .form-info .fa{
 	margin-right: 5px;
 }
+@media(max-width: 768px){
+	.contact-data{
+		font-size: 13px;
+	}
+	.contact-item .contact-item-content{
+		margin-left: 5px;
+	}
+}
 @media(max-width: 576px){
 	.contact-item{
 		margin: 10px;
 	}
 	.contact-items-wrapper,
 	.title.section-title{
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 }
 @media(max-width: 320px){
