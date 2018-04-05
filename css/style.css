@@ -387,7 +387,7 @@ textarea.form-control{
 		left: auto;
 	}
 }
-@media(max-width: 320px){
+@media(max-width: 479px){
 	.inner .h1{
 		letter-spacing: .5em;
 		text-indent: .5em;
@@ -503,7 +503,7 @@ textarea.form-control{
 		margin-bottom: 0;
 	}	
 }
-@media(max-width: 320px){
+@media(max-width: 479px){
 	.default-text{
 		margin-top: 15px;
 	}
@@ -563,7 +563,7 @@ textarea.form-control{
 		font-size: 36px;
 	}
 }
-@media(max-width: 320px){
+@media(max-width: 479px){
 	.tabs-name{
 		letter-spacing: .2em;
 		font-size: 8px;
@@ -595,7 +595,7 @@ textarea.form-control{
 		padding: 70px 0;
 	}
 }
-@media(max-width: 320px){
+@media(max-width: 479px){
 	.title.section-title{
 		font-size: 15px;
 		letter-spacing: .3em;
@@ -676,7 +676,7 @@ textarea.form-control{
 		margin-top: 20px;
 	}
 }
-@media(max-width: 320px){
+@media(max-width: 479px){
 	.portfolio p{
 		margin-bottom: 20px;
 	}
@@ -685,12 +685,10 @@ textarea.form-control{
 	}
 	.tab-second li{
 		letter-spacing: 1px;
+		margin-left: 60px;
 	}
 	.portfolio .tabs-wrapper{
 		margin-top: 30px;
-	}
-	.tab-second li{
-		margin-left: 60px;
 	}
 }
 /*---Portfolio end----*/
@@ -828,7 +826,7 @@ textarea.form-control{
 		margin: auto;/*Появляется непонятный для меня margin с права ,я его поэтому ставлю auto- что бы блок был по середине*/
 	}
 }
-@media(max-width: 320px){
+@media(max-width: 479px){
 	.slide-content{
 		max-width: 310px;
 	}
@@ -915,12 +913,11 @@ textarea.form-control{
 		margin-bottom: 45px;
 	}
 }
-@media(max-width: 320px){
+@media(max-width: 479px){
 	.latest-news .title.section-title{
 		margin-bottom: 10px;
 	}
 	.latest-news .all-news{
-		float: left;
 		margin-top: 10px;
 	}
 }
@@ -934,10 +931,10 @@ textarea.form-control{
 .subscribe .form-info{
 	margin-top: 17px;
 }
-@media(max-width: 320px){
+@media(max-width: 479px){
 	.subscribe .btn.btn-black{
 		margin-top: 10px;
-		width: 100%;
+		width: 290px;
 	}
 }
 /*---Subscribe end----*/
