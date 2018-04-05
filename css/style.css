@@ -90,14 +90,12 @@ blockquote{
 	.default-section{
 		padding: 65px 0;
 	}
-}
-.small-section{
-	padding: 70px 0;
-}
-@media (max-width: 767px) {
 	.small-section{
 		padding: 35px 0;
 	}
+}
+.small-section{
+	padding: 70px 0;
 }
 .container{
 	max-width: 1200px;
@@ -345,13 +343,20 @@ textarea.form-control{
 	background-color: #fff;
 	position: absolute;
 	left: 450px;
-	top: 300px;
+	top: 450px;
 }
 .inner .rhomb-icon .fa{
 	position:relative;
 	top: 4px;
 	left: 3px;
 	font-size: 20px;
+}
+@media(max-width: 1200px){
+	.inner-scroll-bottom{
+		position: absolute;
+		left: 450px;
+		top: 250px;
+	}
 }
 @media (max-width: 991px){
 	.inner .h1{
@@ -371,7 +376,7 @@ textarea.form-control{
 		padding: 150px 0;
 	}
 }
-@media (max-width: 499px) {
+@media (max-width: 576px) {
 	.inner .h1{
 		letter-spacing: .5em;
 		text-indent: .5em;
@@ -389,6 +394,7 @@ textarea.form-control{
 		margin-bottom: 0;
 		font-size: 20px;
 	}
+	
 }
 /*-----inner end----*/
 
@@ -490,8 +496,14 @@ textarea.form-control{
 	.team-item-info .team-item-role{
 		font-size: 9px;
 	}
+	.team-item{
+		margin-bottom: 40px
+	}
+	.about-studio .col:last-of-type .team-item{
+		margin-bottom: 0;
+	}	
 }
-@media(min-width: 320px){
+@media(max-width: 320px){
 	.default-text{
 		margin-top: 15px;
 	}
@@ -501,6 +513,9 @@ textarea.form-control{
 	.team-item{
 		margin-bottom: 40px
 	}
+	.about-studio .col:last-of-type .team-item{
+		margin-bottom: 0;
+	}	
 }
 /*---About studio end---*/
 
@@ -548,12 +563,6 @@ textarea.form-control{
 		font-size: 36px;
 	}
 }
-@media(max-width: 500px){
-	#tabs .tabs-nav li{
-		width: 33.3332%;
-		margin-top: 20px;
-	}
-}	
 @media(max-width: 320px){
 	.tabs-name{
 		letter-spacing: .2em;
@@ -561,6 +570,10 @@ textarea.form-control{
 	}
 	#tabs blockquote{
 		font-size: 20px;
+	}
+	#tabs .tabs-nav li{
+		width: 33.3332%;
+		margin-top: 20px;
 	}
 }
 /*---Services end---*/
@@ -587,15 +600,11 @@ textarea.form-control{
 		font-size: 15px;
 		letter-spacing: .3em;
 	}
-	.latest-news .all-news{
-		float: left;
-		margin-top: 10px;
-	}
 }
 /*---Lets talk end-----*/
 
 /*---Portfolio----*/
-.tabs-wrapper{
+.portfolio .tabs-wrapper{
 	margin-top: 80px;
 }
 #tabs-portfolio {
@@ -651,7 +660,7 @@ textarea.form-control{
 		width: 50%;
 	}
 }
-@media(max-width: 768px){
+@media(max-width: 767px){
 	.tab-second li{
 		margin-left: 25px;
 	}
@@ -676,6 +685,12 @@ textarea.form-control{
 	}
 	.tab-second li{
 		letter-spacing: 1px;
+	}
+	.portfolio .tabs-wrapper{
+		margin-top: 30px;
+	}
+	.tab-second li{
+		margin-left: 60px;
 	}
 }
 /*---Portfolio end----*/
@@ -795,10 +810,13 @@ textarea.form-control{
 	letter-spacing: .2em;
 	text-transform: uppercase;
 }
-
 @media(max-width: 767px){
 	.slide-content{
 		max-width: 730px;
+		margin: auto;
+	}
+	.reviews-carousel{
+		padding: 65px 0;
 	}
 }
 @media(max-width: 576px){
@@ -807,7 +825,7 @@ textarea.form-control{
 	}
 	.slide-content{
 		max-width: 560px;
-		margin: auto;/*Появляется непонятный для меня margin с права ,я его поэтому ставлю auto? что бы блок был по середине*/
+		margin: auto;/*Появляется непонятный для меня margin с права ,я его поэтому ставлю auto- что бы блок был по середине*/
 	}
 }
 @media(max-width: 320px){
@@ -837,7 +855,7 @@ textarea.form-control{
 .latest-news .span-news{
 	float: left;
 }
-.latest-news .a{
+.latest-news .all-news{
 	float: right;
 	font-size: 11px;
 	letter-spacing: .4em;
@@ -876,6 +894,7 @@ textarea.form-control{
 .news-item-img:hover{
 	filter:none;
 }
+
 @media(max-width: 991px){
 	.latest-news .news-item .news-item-img img{
 		width: 100%;
@@ -884,6 +903,25 @@ textarea.form-control{
 		margin-bottom: 30px;
 		padding-bottom: 30px;
 		border-bottom: 2px solid black;
+	}
+	.latest-news .col:last-of-type .news-item{
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}
+@media(max-width: 767px){
+	.latest-news .title.section-title{
+		margin-bottom: 45px;
+	}
+}
+@media(max-width: 320px){
+	.latest-news .title.section-title{
+		margin-bottom: 10px;
+	}
+	.latest-news .all-news{
+		float: left;
+		margin-top: 10px;
 	}
 }
 /*---Latest news end---*/
@@ -899,6 +937,7 @@ textarea.form-control{
 @media(max-width: 320px){
 	.subscribe .btn.btn-black{
 		margin-top: 10px;
+		width: 100%;
 	}
 }
 /*---Subscribe end----*/
@@ -947,38 +986,47 @@ textarea.form-control{
 .form-info .fa{
 	margin-right: 5px;
 }
-@media(max-width: 768px){
-	.contact-data{
+@media(max-width: 1200px){
+	.contacts .contact-item-content{
 		font-size: 13px;
 	}
-	.contact-item .contact-item-content{
-		margin-left: 5px;
-	}
 }
-@media(max-width: 576px){
-	.contact-item{
-		margin: 10px;
+@media(max-width: 991px){
+	.contacts .contact-item-content{
+		font-size: 15px;
 	}
-	.contact-items-wrapper,
-	.title.section-title{
+	.contact-items-wrapper{
 		margin-bottom: 15px;
 	}
+	.contact-item{
+		margin-top: 15px;
+	}
+	.contact-items-wrapper,
+	.contacts .title.section-title{
+		margin-bottom: 35px;
+	}
 }
-@media(max-width: 320px){
+@media(max-width: 767px){
+	.contacts .title{
+		margin-bottom: 45px;
+	}
+	.contact-item{
+		margin: 10px 0;
+	}
 	.contact-form .form-col{
 		width: 100%;
 	}
 	textarea.form-control{
 		margin-top: 10px;
 	}
-	.contacts button{
-		margin: auto;
-		width: 100%;
-	}
 	.contacts .form-info{
 		margin: auto;
 		width: 100%;
 		text-align: center;
+	}
+	.contacts button{
+		margin: auto;
+		width: 100%;
 	}
 }
 /*---contacts  end---*/
@@ -1033,7 +1081,6 @@ textarea.form-control{
 }
 .rhythm{
 	margin-top: 110px;
-	/*margin-bottom: 60px;*/
 }
 .transporent-icon + .transporent-icon{
 	margin-left: 20px;
